@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Services - Summer's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Summer</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link active" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="gallery.html">Gallery</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="services-section">
+        <h1 class="section-title" data-aos="fade-down" data-aos-duration="1000">My <span>Services</span></h1>
+        <div class="services-container">
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1000">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>In today’s digital world, a fast, secure, and visually appealing website is essential for success. Whether you need a brand-new site, an e-commerce platform, or a redesign of your existing one, our professional web development services are tailored to meet your business goals.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Great design isn’t just about looks—it’s about creating intuitive, engaging, and user-centered experiences that drive satisfaction and results. Our UI/UX design services focus on crafting visually stunning and highly functional interfaces that keep users coming back.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Math Works</h3>
+                <p>Having a math trouble? I got you! Let's solve the problem one by one.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                <i class="fas fa-search"></i>
+                <h3>Paperworks</h3>
+                <p>May it be essays or documents, Summer will be a helping hand to scrabble some words for you!</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+                <i class="fas fa-chart-line"></i>
+                <h3>Powerpoint Presentations</h3>
+                <p>A powerful presentation goes beyond slides—it tells a story, captivates your audience, and amplifies your message. Our PowerPoint design services transform your ideas into visually stunning, engaging, and memorable presentations that leave a lasting impact.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                <i class="fas fa-video"></i>
+                <h3>Story Crafting</h3>
+                <p>Every great brand, campaign, or message starts with a powerful story. Our story crafting services help you captivate your audience, evoke emotions, and inspire action—whether for marketing, branding, entertainment, or education.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
